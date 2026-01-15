@@ -9,8 +9,8 @@ body {
 
 /* navbar */
 nav {
-    background-color: blue;
-    color: whte;
+    background-color: #F5FDC6;
+    color: black;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -29,7 +29,7 @@ nav ul {
 }
 
 nav a {
-    color:blueviolet;
+    color: #41521f;;
     text-decoration: none;
 }
 

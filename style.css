@@ -22,7 +22,7 @@ body {
   z-index: 999;
 }
 
-nav {
+.navbar {
     margin: 20px auto 0;
     width: 90%;
     height: 64px;
@@ -39,7 +39,7 @@ nav {
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.25);
 }
 
-nav ul {
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -47,11 +47,49 @@ nav ul {
     margin: 0;
 }
 
-nav a {
-    color: white;
+.nav-menu a {
+    color: #41521F;
     text-decoration: none;
 }
 
+.hamburger-menu {
+    display:none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    width: 26px;
+    height: 3px;
+    background-color: #41521F;
+    border-radius: 4px;
+}
+
+@media(max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 260px;
+        background-color: white;
+        flex-direction: column;
+        padding: 80px 24px;
+        gap: 24px;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+}
 /* section umum */
 section {
     padding: 60px 20px;
@@ -61,29 +99,69 @@ section {
 
 /* hero */
 #hero {
-    /* background-color: #F5FDC6; */
-    background-image: url("assets/heroimage.png");
+    /* background-color: white; */
+    background: linear-gradient(to bottom, #F5FDC6, white);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+
 }
 
-#hero button {
-    padding: 10px 20px;
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    margin-bottom: 24px;
+}
+
+#tombol-hero {
+    padding: 12px 24px;
+    border: none;
     background-color: darkred;
     color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-#hero button:hover {
+#tombol-hero:hover {
     background-color: green;
 }
 
+.hero-image {
+    position: relative;
+    width: 420px;
+    height: 300px;
+}
+
+/* rectangle dibelakang gambar */
+.img-bg {
+    position: relative;
+    top:-20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #D0B17A;
+    border-radius: 24px;
+    z-index: 1;
+}
+
+/* gambar */
+.hero-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    z-index: -1;
+}
 /* services card */
 .card-container {
     display: flex;

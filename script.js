@@ -9,3 +9,15 @@ tombol.addEventListener('click', function(){
     tombol.style.backgroundColor="pink";
     tombol.innerText="sudah diklik";
 })
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+hamburger.addEventListener('click', function() {
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});

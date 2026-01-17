@@ -11,26 +11,39 @@
 <body>
     <!-- navbar -->
      <header class="nav-wrapper">
-         <nav>
+         <nav class="navbar">
              <div class="logo">
                  <img src="assets/oval-logo.png" alt="logo">
              </div>
-             <ul>
+             
+             <!-- hamburger menu -->
+              <div class="hamburger-menu" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+             <ul class="nav-menu" id="nav-menu">
                  <li><a href="#hero">Home</a></li>
                  <li><a href="#about">About</a></li>
                  <li><a href="#services">Services</a></li>
-                 <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
+            </ul>
+        </nav>
     </header>
 
     <!-- section hero -->
     <section id="hero">
-        <h1>Ini Judul</h1>
-        <p>Ini paragraph</p>
-        <button id="tombol-hero"> Click Here </button>
+        <div class="hero-text">
+            <h1>Ini Judul</h1>
+            <p>Ini paragraph</p>
+            <button id="tombol-hero"> Click Here </button>
+        </div>
+        
+        <div class="hero-image">
+            <div class="img-bg">
+                <img src="assets/kafe2.png" alt="Hero Image">
+            </div>
+        </div>
     </section>
-
     <!-- section about -->
     <section id="about">
         <h1> Ini about </h1>

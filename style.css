@@ -121,7 +121,7 @@ section {
 }
 
 .hero-text p {
-    font-size: 17px;
+    font-size: 15px;
     margin: 0 0 16px 0;
     line-height: 1.5;
 }
@@ -161,7 +161,7 @@ section {
     align-items: stretch;
 }
 .about-image {
-    border-radius: 20px;
+    border-radius: 30px;
     background-size: cover;
     background-position: center;
     /* border: 1px solid #41521F; */
@@ -255,8 +255,130 @@ section {
 
 /* gallery */
 #gallery {
-    
+    padding: 80px 10%;
 }
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 5px */
+}
+
+.gallery-image {
+    height: 180px;
+    /* border-radius: 20px; */
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-image.image1 {
+    background-image: url(assets/kafe2.png);
+}
+.gallery-image.image2 {
+    background-image: url(assets/about.jpg);
+}
+.gallery-image.image3 {
+    background-image: url(assets/gallery2.jpg);
+}
+.gallery-image.image4 {
+    background-image: url(assets/gallery1.jpg);
+}
+
+/* contact */
+#contact {
+    padding: 80px 10%;
+    max-width: 60%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.contact-left {
+    max-width: 420px;
+}
+
+.contact-left p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contactlogo img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+
+.contact-form{
+    display: flex;
+    gap: 12px;
+}
+
+.contact-form input {
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: 1px solid #41521F;
+    outline: none;
+    width: 200px;
+}
+
+.contact-form button {
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: 1px solid #41521F;
+   background: transparent;
+   cursor: pointer;
+   width: 85px;
+}
+
+.contact-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px
+}
+
+.contact-links {
+    display: flex;
+    gap: 60px;
+}
+
+.links-group h3 {
+    color: #41521F;
+    margin-bottom: 12px;
+    font-size: 22px;
+
+}
+.contact-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-nav li {
+    line-height: 2.5;
+    margin-bottom: 8px;
+}
+
+.contact-social {
+    display: flex;
+    gap: 12px;
+}
+
+.social-group h3 {
+    color: #41521F;
+}
+
+.contact-social span {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #41521F;
+    border-radius: 30px;
+    display: inline-block;
+}
+
 /* footer */
 footer {
     background-color: #41521F;

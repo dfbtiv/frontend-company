@@ -198,21 +198,65 @@ section {
     color: #41521F;
 }
 
-.menu-card-container {
+.menu-container {
     display: flex;
     justify-content:center;
     gap: 20px;
     flex-wrap: wrap; 
 }
 
-.card {
-    background: pink;
-    padding: 10px;
+.menu-card {
+    border-radius: 20px;
     width: 250px;
-    border-radius: 2%;
+    text-align: center;
+}
+
+.menu-image {
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.menu-image.red {
+    background-image: url(assets/red.jpg);
+}
+
+.menu-image.matcha {
+    background-image: url(assets/matcha.jpg);
+}
+
+.menu-image.croissant {
+    background-image: url(assets/croissant.jpg);
 }
 
 
+.menu-text {
+    text-align: center;
+    width: 100%;
+}
+
+.menu-text h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.menu-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.menu-card h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* gallery */
+#gallery {
+    
+}
 /* footer */
 footer {
     background-color: #41521F;

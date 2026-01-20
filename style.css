@@ -92,7 +92,7 @@ body {
 /* section umum */
 section {
     text-align: center;
-    min-height: 80vh;
+    background-color: #dae4c6;
 }
 
 /* hero */
@@ -100,10 +100,11 @@ section {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 50px 10% 50px;
+    padding: 80px 10% 50px;
     justify-content: space-between;
     background-image: url(assets/kafe2.png);
     background-color: #41521F;
+    min-height: 80vh;
 
 
 }
@@ -149,7 +150,7 @@ section {
 /* about */
 /* css grid utama */
 #about {
-    padding: 80px 10%;
+    padding: 80px 10% 0;
     color: #41521F;
 }
 
@@ -160,11 +161,27 @@ section {
     gap:24px;
     align-items: stretch;
 }
+
+.about-image-wrapper {
+   padding: 30px;
+   background-color: rgba(255, 255, 255, 0.25);
+   backdrop-filter: blur(14px);
+   -webkit-backdrop-filter: blur(14px);
+   border-radius: 30px;
+   border: 1px solid rgba(255, 255, 255, 0.25);
+   box-shadow: 0 8px 32px rgba(255, 255, 255, 0.25);
+   overflow: hidden;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 .about-image {
+    width: 100%;
+    min-height: 450px;
     border-radius: 30px;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #41521F; */
 }
 
 .about-image.big {
@@ -194,7 +211,7 @@ section {
 
 /* Menu */
 #menu {
-    padding: 80px 10%;
+    padding: 0 10% 0 ;
     color: #41521F;
 }
 
@@ -255,18 +272,16 @@ section {
 
 /* gallery */
 #gallery {
-    padding: 80px 10%;
+    padding: 80px 0 0;
 }
 
 .gallery-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: 5px */
 }
 
 .gallery-image {
     height: 180px;
-    /* border-radius: 20px; */
     background-size: cover;
     background-position: center;
 }
@@ -286,8 +301,9 @@ section {
 
 /* contact */
 #contact {
-    padding: 80px 10%;
-    max-width: 60%;
+    padding: 0 10% 0;
+    max-width: 100%;
+    background-color: #f8ffe8;
 }
 
 .contact-container {
@@ -384,5 +400,5 @@ footer {
     background-color: #41521F;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 4px;
 }

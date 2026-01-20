@@ -8,6 +8,8 @@
     <!-- Panggil Css -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image" href="assets/oval-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <!-- navbar -->
@@ -64,23 +66,43 @@
     </section>
     <!-- section menu -->
     <section id="menu">
-        <div class = "menu-container">
+        <div class="menu-wrapper">
             <div class="menu-text">
                 <h2> Best Sellers </h2>
                 <p> Explore flavors that soothe, surprise, and spark joy.</p>
             </div>
-            <div class="menu-card">
-                <div class="menu-image red"></div>
-                <h3> Red Velvet Cake </h3>
+
+            <button class="menu-btn prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+
+            </button>
+               
+            <div class="menu-container">
+                <div class="menu-card">
+                    <div class="menu-image red"></div>
+                    <h3> Red Velvet Cake </h3>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image matcha"></div>
+                    <h3> Matcha Latte </h3>
+                </div>
+                <div class="menu-card">
+                    <div class ="menu-image croissant"></div>
+                    <h3> Croissant Greentea </h3>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image matcha"></div>
+                    <h3> Matcha Latte </h3>
+                </div>
+                <div class="menu-card">
+                    <div class ="menu-image croissant"></div>
+                    <h3> Croissant Greentea </h3>
+                </div>
             </div>
-            <div class="menu-card">
-                <div class="menu-image matcha"></div>
-                <h3> Matcha Latte </h3>
-            </div>
-            <div class="menu-card">
-                <div class ="menu-image croissant"></div>
-                <h3> Croissant Greentea </h3>
-            </div>
+
+            <button class="menu-btn next">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
     </section>
     <!-- Gallery -->
@@ -104,7 +126,8 @@
                 <div class="contact-form">
                     <input type="text" placeholder="Enter Email Address">
                     <button> Send </button>
-             </div>
+                </div>
+            </div>
              <!-- Right -->
               <div class="contact-right">
                 <div class="contact-links">
@@ -127,10 +150,19 @@
                 <div class="contact-social">
                     <div class="social-group">
                         <h3> Follow Us </h3>
-                        <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/" class="social-icon" target="_blank" aria-label="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com" class="social-icon" target="_blank" aria-label="x">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://web.whatsapp.com/" class="social-icon" target="_blank" aria-label="whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                    </div>
+
                 </div>
               </div>
         </div>

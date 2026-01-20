@@ -21,3 +21,15 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
         navMenu.classList.remove("active");
     });
 });
+
+const container = document.querySelector('.menu-container');
+const prev = document.querySelector('.menu-btn.prev');
+const next = document.querySelector('.menu-btn.next');
+
+next.addEventListener('click', () => {
+    container.scrollBy({ left: 270, behavior:"smooth"});
+});
+
+prev.addEventListener('click', () => {
+    container.scrollBy({ left: -270, behavior: "smooth"});
+});
